@@ -1,0 +1,31 @@
+:root{
+  --bg:#0b1220; --card:#141c2c; --text:#e9f1ff; --muted:#9bb3d1; --accent:#6cc4ff;
+}
+.night { filter: brightness(0.7); }
+:root.marte {
+  --bg: #201010;
+  --card: #2a1818;
+  --text: #ffeede;
+  --muted: #c4a590;
+  --accent: #ffb870;
+}
+
+*{box-sizing:border-box}
+body{margin:0; font-family:system-ui,Segoe UI,Roboto,Arial; background:var(--bg); color:var(--text)}
+.wrap{max-width:960px; margin:0 auto; padding:16px}
+h1{margin:6px 0 12px}
+p{color:var(--muted)}
+.card{background:var(--card); border:1px solid #24314a; border-radius:14px; padding:14px; margin:12px 0}
+.grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:10px; margin-top:8px}
+label{display:flex; flex-direction:column; gap:6px; color:var(--text)}
+input, select{padding:8px; border:1px solid #2a3a57; border-radius:8px; background:#0f1726; color:var(--text)}
+.presets{display:flex; gap:8px; flex-wrap:wrap; margin-top:10px}
+button{padding:8px 12px; border:1px solid #2a3a57; background:#153055; color:#dff2ff; border-radius:10px; cursor:pointer}
+button:hover{filter:brightness(1.1)}
+.results p{margin:6px 0}
+svg#viz{width:100%; height:auto; background:#0f1726; border:1px solid #2a3a57; border-radius:10px}
+.opt{display:none}
+button:hover {
+  transform: scale(1.05);
+  transition: 0.2s ease;
+}
